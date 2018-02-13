@@ -5,7 +5,24 @@ A partir de la página web proporcionada, completar el código JavaScript para q
 3.- Completar el resto de enlaces de la página para que su comportamiento sea idéntico al del primer enlace
 4.- Cuando una sección se oculte, debe cambiar el mensaje del enlace asociado
 */
-/*Ejercicio 2 y 4*/
+function oculta(event){
+    event.preventDefault();
+    console.log(event.target)
+    event.target.parentNode.children[0].classList.toggle("oculta");
+    if(this.innerHTML=="Ocultar contenidos"){
+        this.innerHTML="Mostrar contenidos";
+    }else{this.innerHTML="Ocultar contenidos"}; 
+  };
+
+function init(){
+    $("#enlace1").click(oculta);
+    $("#enlace2").click(oculta);
+    $("#enlace3").click(oculta);
+};
+$(document).ready(init);
+/*
+};
+Ejercicio 2 y 4
 function oculta(event){
     event.preventDefault();
     $("#parrafo1").toggleClass("oculta");
@@ -15,7 +32,7 @@ function oculta(event){
         $("#enlace1").html("Oculta contenidos");
   };
 };
-/*Ejercicio 3*/
+Ejercicio 3
 function oculta2(event){
     event.preventDefault();
     $("#parrafo2").toggleClass("oculta");
@@ -42,3 +59,4 @@ function init(){
     $("#enlace3").click(oculta3);
 };
 $(document).ready(init);
+*/
