@@ -17,9 +17,8 @@ function oculta(event){
   };
 
 function init(){
-    $("#enlace1").click(oculta);
-    $("#enlace2").click(oculta);
-    $("#enlace3").click(oculta);
+    $("a").click(oculta);
+    
 };
 $(document).ready(init);
 */
@@ -37,8 +36,10 @@ function oculta(event){
 
 function init(){
     console.log("DOM cargado");
-     document.getElementById("enlace1").addEventListener("click",oculta)  
-     document.getElementById("enlace2").addEventListener("click",oculta); document.getElementById("enlace3").addEventListener("click",oculta); 
+    for (var item of document.querySelectorAll("a")){
+        item.addEventListener("click",oculta);
+    };
+ 
 }
 
 document.addEventListener("DOMContentLoaded",init);
