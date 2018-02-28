@@ -1,0 +1,14 @@
+{
+  "name": "peticiones",
+  "version": "1.0.0",
+  "description": "Ejercicio sobre peticiones web con NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Laura Bermejo <laura.ber.car@gmail.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
