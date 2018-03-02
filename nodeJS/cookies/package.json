@@ -1,0 +1,15 @@
+{
+  "name": "cookies",
+  "version": "1.0.0",
+  "description": "Ejercicio de cookies con Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Laura Bermejo <laura.ber.car@gmail.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2"
+  }
+}
